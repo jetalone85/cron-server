@@ -1,6 +1,6 @@
 import threading
 
-from grpc_server import GRPCServer
+from grpc.grpc_server import GRPCServer
 
 server = GRPCServer(port=8000)
 server_thread = threading.Thread(target=server.start)
